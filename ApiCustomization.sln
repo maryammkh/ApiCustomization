@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCustomization", "ApiCustomization\ApiCustomization.csproj", "{ECC08C21-20F8-4052-88B2-1EAF79D4E9D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCProject", "MVCProject\MVCProject.csproj", "{EE682272-B819-4B3A-A509-B4C7C22CF82D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ECC08C21-20F8-4052-88B2-1EAF79D4E9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECC08C21-20F8-4052-88B2-1EAF79D4E9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECC08C21-20F8-4052-88B2-1EAF79D4E9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE682272-B819-4B3A-A509-B4C7C22CF82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE682272-B819-4B3A-A509-B4C7C22CF82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE682272-B819-4B3A-A509-B4C7C22CF82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE682272-B819-4B3A-A509-B4C7C22CF82D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

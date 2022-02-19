@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="form-group">
+        <label class="col-md-4 control-label">
+        </label>
+        <div class="col-md-8">
+            <input type="button" id="SaveFileStoreSetting" name="SaveFileStoreSetting" class="btn green" value="Admin.Setting.FileStore.Save" />
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#SaveFileStoreSetting").click(function () {
+        var path = "";
+        var domainName = "";
+        $.ajax({
+            url: "@Url.Action("SaveSeparateTaskDomain", "Home")",
+            type: "POST",
+            dataType: "json",
+            /*data: { path: path, fileStoredomainName: domainName, isFirstpart: false},*/
+            success: function (results) {
+                if (results.success) {
+                    alert("success");
+                }
+                else
+                {
+                    alert("error");
+                }
+            },
+            error: function (request, status, error) {
+            }
+        });
+    });
+</script>
